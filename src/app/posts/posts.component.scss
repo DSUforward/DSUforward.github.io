@@ -1,0 +1,24 @@
+.post-container {
+  padding: 2em;
+  padding-top: 1px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-top: 0px;
+}
+.post {
+  margin-top: 2em;
+  background-color: hsl(39, 77%, 83%, 20%);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  padding: 10px;
+  p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+.tags {
+ opacity: 0.6;
+ font-size: 12px;
+}
