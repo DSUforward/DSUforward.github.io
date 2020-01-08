@@ -12,6 +12,7 @@ import { BootCarouselComponent } from './boot-carousel/boot-carousel.component';
 import { BootPostsComponent } from './boot-posts/boot-posts.component';
 import { BootFooterComponent } from './boot-footer/boot-footer.component';
 import { HomeComponent } from './home/home.component';
+import { GoalsComponent } from './goals/goals.component';
 
 const appRoutes: Routes = [
   { path: 'questions', component: BootCardsComponent },
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     BootPostsComponent,
     BootFooterComponent,
     HomeComponent,
+    GoalsComponent,
   ],
   imports: [
     BrowserModule,
