@@ -13,6 +13,7 @@ import { BootPostsComponent } from './boot-posts/boot-posts.component';
 import { BootFooterComponent } from './boot-footer/boot-footer.component';
 import { HomeComponent } from './home/home.component';
 import { GoalsComponent } from './goals/goals.component';
+import { CommonModule, APP_BASE_HREF, LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 const appRoutes: Routes = [
   { path: 'questions', component: BootCardsComponent },
@@ -42,7 +43,12 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, {enableTracing: true})
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
